@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bsale e-shop</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--css-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!--Navigation Section-->
+    <section id="header">
+        <nav class="navbar navbar-light bg-white">
+            <div class="container-md">
+              <a class="navbar-brand" href="index.html">
+                  <img src="./images/logo.jpg" alt="" width="100">
+              </a>
+              <form class="d-flex container-search">
+                <input class="form-control me-2 input-search" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success buscar" type="submit">Search</button>
+              </form>
+              <button class="buttonCart"><i class="fas fa-shopping-cart"></i></button>
+            </div>
+          </nav>
+    </section>
+    <!--HappyHolidays-->
+    <div class="container-fluid bg-black d-flex justify-content-center">
+        <h5 class="h6 p-3 text-white">Happy Shopping</h5>
+    </div>
+    <!--Content-->  
+    <div class="content" id="contentId">
+        <div class="container mt-5" id="containerBody">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-md-3 col-lg-4
+                d-flex justify-content-center">
+                    <form class="mb-10 mb-md-0">
+                        <ul class="nav flex-column" id="filterNav">
+                            <li class="nav-item dropdown">
+                                <!--Toggle-->
+                                <a class="nav-link dropdown-toggle text-dark fw-bolder" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categories
+                                </a>
+                                <!--Collapse-->
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#" id="1">Bebida energetica</a>
+                                    <a class="dropdown-item" href="#" id="2">Pisco</a>
+                                    <a class="dropdown-item" href="#" id="3">Ron</a>
+                                    <a class="dropdown-item" href="#" id="4">Bebida</a>
+                                    <a class="dropdown-item" href="#" id="5">Snack</a>
+                                    <a class="dropdown-item" href="#" id="6">Cerveza</a>
+                                    <a class="dropdown-item" href="#" id="7">Vodka</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="col-12 col-sm-8 col-md-9 col-lg-8">
+                    <div class="row productos" id="refresh">
+                        <!--
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                            <div class="card border-0">
+                                <div class="card-img imagen">
+                                    <img src="./images/beer1.jpg" class="card-img-top" alt="">
+                                </div>
+                                
+                                <div class="card-body px-0">
+                                    <div class="font-size-xs">
+                                        <a class="text-muted text-decoration-none">Beer</a>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <a class="text-body  text-decoration-none">Pilsen</a>
+                                    </div>
+                                    <div class="font-weight-bold text-muted">
+                                        <p>$8.00</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <template id="template_products">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4  card-product">
+            <div class="card border-0">
+                <div class="card-img imagen">
+                    <img src="./images/beer1.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="card-body px-0">
+                    <div class="font-size-xs">
+                        <a class="name-product text-muted text-decoration-none">Beer</a>
+                    </div>
+                    <div class="font-weight-bold">
+                        <a class="text-body  text-decoration-none category-product">Pilsen</a>
+                    </div>
+                    <div class="font-weight-bold text-muted">
+                        <p class="price-product">$8.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </template>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b99d0e7e0d.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
