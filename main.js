@@ -5,7 +5,7 @@ const template = document.getElementById('template_products').content;
 const contenedorBusqueda = document.querySelector('.container-search')
 const entradaBusqueda = document.querySelector('.input-search')
 const contenedorBody = document.getElementById('containerBody')
-const botonCarrito = document.querySelector('.buttonCart')
+//const botonCarrito = document.querySelector('.buttonCart')
 
 const detectarBotones = document.querySelectorAll('.dropdown-item')
 
